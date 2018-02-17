@@ -8,13 +8,13 @@ import javafx.stage.Stage;
 public class CirlcePractice extends Application {
 	@Override
 	public void start(Stage primaryStage) {
-		HBox hb = new HBox();
-		Circle circle = new Circle(10,10, 0);
-		hb.getChildren().add(circle);
+		Pane pane = new Pane();
+		Circle circle = new Circle(200, 200, 100); // Circle(<<x coord>>, <<y coord>>, <<radius>>)
+		pane.getChildren().add(circle);
 		
 		//set the scene
-		Scene scene = new Scene(hb, 200,200);
-		primaryStage.setTitle("Stuff");
+		Scene scene = new Scene(pane, 400, 400);
+		primaryStage.setTitle("CirclePractice");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
