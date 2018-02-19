@@ -17,12 +17,10 @@ public class Exercise_6_3 {
 	public static int reverse(int number) {
 		int a = number;
 		int b;
-		int i = 0;
 		while (a > 0)  {
 			b = a % 10; // example: a = 432, so here b == 432 % 10 == 2. 
 			reverseNumArrays.add(b);
 			a = a / 10;
-			i += 1;
 		}
 		int k = reverseNumArrays.size() - 1;
 		for (int j = 0; j < reverseNumArrays.size(); j++) {
@@ -56,7 +54,7 @@ public class Exercise_6_3 {
 		} else {
 			yesOrNo = "no";
 		}
-		System.out.println("Is this a Palindrome? : " + yesOrNo);
+		System.out.println("Is this a Palindrome? " + yesOrNo);
 
 	}
 }
