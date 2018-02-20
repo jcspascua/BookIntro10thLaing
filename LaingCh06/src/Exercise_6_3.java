@@ -54,7 +54,8 @@ public class Exercise_6_3 {
 		} else {
 			yesOrNo = "no";
 		}
-		System.out.println("Is this a Palindrome? " + yesOrNo);
+		System.out.println("Is this a Palindrome?"
+				+ " " + yesOrNo);
 
 	}
 }
